@@ -1,5 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	PHP Cross Referencing Documentation Generator
+Summary(pl.UTF-8):	Generator dokumentacji z odwołaniami do kodu w PHP
 Name:		phpxref
 Version:	0.7
 Release:	0.4
@@ -19,6 +20,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 PHPXref is a developer tool that's designed to ease the process of
 working on large PHP projects by making it very fast and easy to
 browse the code documentation along with the code itself.
+
+%description -l pl.UTF-8
+PHPXref to narzędzie programistyczne zaprojektowane w celu ułatwienia
+pracy z dużymi projektami w PHP poprzez szybkie i łatwe przeglądanie
+dokumentacji do kodu wraz z samym kodem.
 
 %prep
 %setup -q
