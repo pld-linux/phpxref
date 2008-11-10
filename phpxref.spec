@@ -3,11 +3,12 @@ Summary:	PHP Cross Referencing Documentation Generator
 Summary(pl.UTF-8):	Generator dokumentacji z odwołaniami do kodu w PHP
 Name:		phpxref
 Version:	0.7
-Release:	0.4
+Release:	1
 License:	GPL v2
 Group:		Development/Languages/PHP
 Source0:	http://dl.sourceforge.net/phpxref/%{name}-%{version}.tar.gz
 # Source0-md5:	9518c12578c6daa6ee69bd23379ec8ba
+Patch0:		%{name}-javascriptfix.patch
 URL:		http://phpxref.sourceforge.net/
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-base >= 1:5.6
@@ -28,6 +29,7 @@ dokumentacji do kodu wraz z samym kodem.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %install
 rm -rf $RPM_BUILD_ROOT
