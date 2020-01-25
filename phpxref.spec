@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	PHP Cross Referencing Documentation Generator
 Summary(pl.UTF-8):	Generator dokumentacji z odwołaniami do kodu w PHP
 Name:		phpxref
